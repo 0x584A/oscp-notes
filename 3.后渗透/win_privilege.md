@@ -20,6 +20,7 @@ ipconfig /all
 schtasks /query /fo LIST /v
 wmic service get name,displayname,pathname,startmode
 wmic service get name,displayname,pathname,startmode |findstr /i "auto" |findstr /i /v "c:\windows"
+PS> Get-ChildItem -Path C:\Users -Recurse -Include root.txt
 
 dir /r
 attrib *.* -h -s /s /d
