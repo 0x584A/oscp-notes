@@ -11,6 +11,7 @@
 ```bash
 chdir
 whomai /priv
+whoami /groups
 query user
 systeminfo
 systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
